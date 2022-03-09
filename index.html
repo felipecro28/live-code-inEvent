@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=0">
+  
+	<title>InEvent - Enterprise Virtual and Hybrid Events Software</title>
+  	<meta name="description" content="InEvent offers a virtual and in-person platform for corporate events and experiential marketing. Start today with a free trial and experience our incredible software support." />
+	<link rel="shortcut icon" href="https://inevent.com/images/icons/favicon.ico">
+	<meta property="og:title" content="InEvent - Enterprise Virtual and Hybrid Events Software" />
+	<meta property="og:description" content="InEvent offers a virtual and in-person platform for corporate events and experiential marketing. Start today with a free trial and experience our incredible software support." />
+	<meta property="og:image" content="https://inevent.com/images/metatags/home.jpg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+ </head>
+
+<body>
+
+ 	<header>
+		 <div class="nav-header">
+			<img src="./references/inevent-go-beyond.png" alt="logo-go-beyond" id="go-beyond">
+			<p> InEvent is the most powerful software for professional events.
+				If your company needs a plataform for B2B events, video-driven conferences,
+				or any virtual or hybrid experience, InEvent is the perfect solution.
+			</p>
+			<div class="input-button">
+				<input type="text" id="input-email" placeholder="Enter your email">
+				<button id="button-book">Book a meeting</button>
+			</div>
+		</div>
+		
+		<div class="video-header">
+			<video autoplay muted loop  preload id="container-video">
+                <source src="https://cdn.inevent.com/images/home/header.mp4" type="video/mp4">
+                <source src="https://cdn.inevent.com/images/home/header.webm" type="video/webm">
+            </video>
+		</div>
+ 	</header>
+ 
+	
+	<section id="features-list" class="row list-categories">
+		<div class="container"> 
+			<div class="row">
+				<h1><b>Features List</b></h1>
+				<p class="heavy">If you prefer, you can choose cases by category</p>
+			</div>
+			
+			<div class="row select-categories"> 
+				<div class="col-sm-12 columns">
+					<button class="btn-categories" data-cat="all" onclick="filterCategory('all')">All</button>
+					<button class="btn-categories" data-cat="start" onclick="filterCategory('start')">Start</button>
+					<button class="btn-categories" data-cat="registration" onclick="filterCategory('registration')">Registration</button>
+					<button class="btn-categories" data-cat="live" onclick="filterCategory('live')">Live</button>
+					<button class="btn-categories" data-cat="compliance" onclick="filterCategory('compliance')">Compliance</button>
+				</div>
+			</div>
+			<div class="row col-sm-12 align-table">  
+				<table id="showTable">				
+					<tr id="trTable">
+						<th id="thFeature"><h2>Feature</h2></th>
+						<th id="thCategory"><h2>Category</h2></th>
+					</tr> 
+				</table> 
+			</div>			
+		</div>
+	</section>
+	
+	<section id="footer"> 
+			 <div class="v2-login-eventland"><hr/>
+				<div class="content">
+					<div class="content-collumn"><img src="https://inevent.com/images/icons/InEvent-Logo-original.svg" alt="WebManager" class="footer-logo2" /></div>
+					<div class="content-collumn">
+						<ul class="links">
+							<li class="header">COMPANY</li>
+							<li><a href="https://inevent.com/en/about.php">About</a></li>
+							<li><a href="https://inevent.com/en/solutions-for-events.php">Solutions</a></li>
+							<li><a href="https://inevent.com/en/library.php">Library</a></li>
+							<li><a href="https://inevent.com/en/case-studies.php">Cases</a></li>
+							<li><a href="https://inevent.com/en/pricing.php">Plans</a></li>
+							<li><a href="https://inevent.com/en/support.php">Support</a></li>
+						</ul>
+					</div>
+					<div class="content-collumn">
+						<ul class="links">
+							<li class="header">SOLUTIONS</li>
+							<li><a href="https://inevent.com/en/start-data-management.php">Start</a></li>
+							<li><a href="https://inevent.com/en/live-event-mobile-app.php">Live</a></li>
+							<li><a href="https://inevent.com/en/registration-forms-rsvp-invites.php">Registration</a></li>
+							<li><a href="https://inevent.com/en/management-budget-briefing-suppliers.php">Compliance</a></li>
+							<li><a href="https://inevent.com/en/hospitality-logistics-roomlist.php">Hospitality</a></li>
+							<li><a href="https://inevent.com/en/pass-event-quick-checkin.php">Pass</a></li>
+						</ul>
+					</div>
+					<div class="content-collumn">
+						<ul class="links">
+							<li class="header">MORE</li>
+							<li><a href="https://inevent.com/en/start-data-management.php">Start</a></li>
+							<li><a href="https://inevent.com/en/eventmarket.php">EventMarket</a></li>
+							<li><a href="https://inevent.com/en/referral-partnerships.php">Partnership</a></li>
+							<li><a href="https://inevent.com/en/event-hub-inevent-data-platform.php">EventHub</a></li>
+							<li><a href="https://inevent.com/en/global-international-worldwide-software.php">Global</a></li>
+							<li><a href="https://inevent.com/en/security-data-privacy.php">Security</a></li>
+						</ul>
+					</div>
+					<div class="content-collumn">
+						<ul class="links">
+							<li><a href="https://inevent.com/en/company.php">Login</a></li>
+							<li><a href="https://inevent.com/blog">Blog</a></li>
+							<li><a href="https://faq.inevent.com/l/en">FAQ</a></li>
+							<li><a href="https://inevent.com/en/work-with-us.php">Jobs</a></li>
+							<li><a href="https://inevent.com/en/developer.php">API Docs</a></li>
+							<li><a href="https://inevent.com/en/partners-integrations.php">Integrations</a></li>
+							<li><a href="https://inevent.com/en/trust.php">System Status</a></li>
+						</ul>
+					</div>
+					<div class="content-collumn">
+						<ul class="social-media" style="width: 88%;">
+							<li><a href="https://www.linkedin.com/company/ineventapp" target="_blank" rel="noopener"> <img src="https://inevent.com/images/social-media/linkedin-gray.svg" alt="InEvent LinkedIn" /> </a></li>
+							<li><a href="https://www.instagram.com/ineventapp" target="_blank" rel="noopener"> <img src="https://inevent.com/images/social-media/instagram-gray.svg" alt="InEvent Instagram" /> </a></li>
+							<li><a href="https://twitter.com/ineventapp" target="_blank" rel="noopener"> <img src="https://inevent.com/images/social-media/twitter-gray.svg" alt="InEvent Twitter" /> </a></li>
+							<li><a href="https://www.youtube.com/channel/UC3C2GrWpjXVjG21Arrtwi4Q" target="_blank" rel="noopener"> <img src="https://inevent.com/images/social-media/youtube-ico.svg" alt="InEvent Youtube" style="width: 22px; height: 22px; margin: 0 2px; border-radius: 80px; background-color: #7f8c8d;" /> </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="legalName">
+					<span>&copy; InEvent, Inc. 2022</span>
+				</div>
+				<div class="copyright">
+					<span><a href="https://inevent.com/en/terms.php">Terms of Service</a></span> <span class="divider"> &bull; </span> <span><a href="https://inevent.com/en/privacy.php">Privacy Policy</a></span> <span class="divider"> &bull; </span> <span><a href="https://inevent.com/en/cookies.php">Cookie Policy</a></span> <span class="divider"> &bull; </span> <span><a href="https://inevent.com/en/gdpr-general-data-protection-regulation.php">GDPR</a></span> <span class="divider"> &bull; </span> <span><a href="https://inevent.com/en/business-continuity-plan.php">Business Continuity Plan</a></span> <span class="divider"> &bull; </span> <span><a href="mailto:sales@inevent.com" target="_blank" rel="noopener">sales@inevent.com</a></span>
+				</div>
+			</div> 
+	</section>
+	  
+  
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+   
+	
+</body>
+
+</html>
