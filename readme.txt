@@ -7,4 +7,4 @@ O desafio consiste em:
 2 - Criar um header baseado na imagem de referencia localizado em references/reference_for_header.jpg.
 
 A aplicação rodando pode ser vista em: 
-
+https://felipecro28.github.io/live-code-inEvent/
